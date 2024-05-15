@@ -7,7 +7,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        containers: [1]
+        containers: [1,2]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -22,7 +22,7 @@ jobs:
         with:
           # Remove the start and wait-on if not needed
           record: true
-          parallel: false
+          parallel: true
           publish-summary: true
           component: false
         env:

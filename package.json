@@ -1,0 +1,14 @@
+{
+  "name": "cypress-personal-project",
+  "version": "1.0.0",
+  "description": "This repository is created for learn the cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ajayc",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.9.0"
+  }
+}

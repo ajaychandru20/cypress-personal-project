@@ -4,7 +4,8 @@
   "description": "This repository is created for learn the cypress",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start", 
+    "test": "cypress run"
   },
   "author": "ajayc",
   "license": "ISC",

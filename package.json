@@ -4,12 +4,20 @@
   "description": "This repository is created for learn the cypress",
   "main": "index.js",
   "scripts": {
-    "start": "react-scripts start", 
-    "test": "cypress run"
+    "start": "react-scripts start",
+    "test": "cypress run",
+    "cypress:open": "cypress open"
   },
   "author": "ajayc",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.9.0"
+    "cypress": "^13.9.0",
+    "neat-csv": "^5.2.0"
+  },
+  "dependencies": {
+    "csv-parse": "^5.5.6",
+    "csv-parser": "^3.0.0",
+    "csv-simple-parser": "^1.0.3",
+    "csv-stringify": "^6.5.0"
   }
 }

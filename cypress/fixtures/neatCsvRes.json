@@ -1,0 +1,47 @@
+[
+  {
+    "﻿Employment intermediary name (Must be between 1 and 120 characters.)": "Employment intermediary address line 1 (Must be between 1 and 35 characters.)",
+    "SP_AGENCY_DIRECT": "925 Heffernan Center",
+    "": ""
+  },
+  {
+    "﻿Employment intermediary name (Must be between 1 and 120 characters.)": "Employment intermediary address line 2 (Must be between 1 and 35 characters.)",
+    "SP_AGENCY_DIRECT": "Suite 35",
+    "": ""
+  },
+  {
+    "﻿Employment intermediary name (Must be between 1 and 120 characters.)": "Employment intermediary address line 3 (Optional, between 1 and 35 characters.)",
+    "SP_AGENCY_DIRECT": "",
+    "": ""
+  },
+  {
+    "﻿Employment intermediary name (Must be between 1 and 120 characters.)": "Employment intermediary address line 4 (Optional, between 1 and 35 characters.)",
+    "SP_AGENCY_DIRECT": "",
+    "": ""
+  },
+  {
+    "﻿Employment intermediary name (Must be between 1 and 120 characters.)": "Employment intermediary postcode (Must be between 1 and 10 characters.)",
+    "SP_AGENCY_DIRECT": "LS6",
+    "": ""
+  },
+  {
+    "﻿Employment intermediary name (Must be between 1 and 120 characters.)": "",
+    "SP_AGENCY_DIRECT": "",
+    "": ""
+  },
+  {
+    "﻿Employment intermediary name (Must be between 1 and 120 characters.)": "Worker forename (Must be between 1 and 35 characters.)",
+    "SP_AGENCY_DIRECT": "Worker middle name (Optional, between 1 and 35 characters.)",
+    "": "Companies House registration number of party paid by intermediary for worker's services (There must be an entry if 'Worker engagement details where intermediary didn't operate PAYE' is 'D'. Must be 2 letters and 6 numbers, or between 6 and 8 numbers.)"
+  },
+  {
+    "﻿Employment intermediary name (Must be between 1 and 120 characters.)": "SP_LTD",
+    "SP_AGENCY_DIRECT": "",
+    "": "KP837162"
+  },
+  {
+    "﻿Employment intermediary name (Must be between 1 and 120 characters.)": "SP_LTD",
+    "SP_AGENCY_DIRECT": "",
+    "": "AZ100420"
+  }
+]

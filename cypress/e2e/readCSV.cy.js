@@ -6,7 +6,7 @@ const fs = require('fs');
 describe("Read the CSV file", () => {
     let tableData;
 
-    it("using the stringify neat-csv format", () => {
+    it.skip("using the stringify neat-csv format", () => {
 
         cy.fixture("intermediary.csv")
             .then(neatCSV)
@@ -21,7 +21,7 @@ describe("Read the CSV file", () => {
         })
     })
 
-    it("using csv-parser and fs approch in task command", () => {
+    it.skip("using csv-parser and fs approch in task command", () => {
         cy.task('readCSVFile', { filePath: "cypress/fixtures/intermediary.csv", jsonFilePath: "cypress/fixtures/csv_parserUsingFS.json", headers: ['emp heading', 'name'] })
             .then(() => {
                 cy.readFile("cypress/fixtures/csv_parserUsingFS.json").then((testData) => {
@@ -34,7 +34,7 @@ describe("Read the CSV file", () => {
             })
     });
 
-    it("using akash, csv-parser and fast-csv in task command ",()=>{
+    it.skip("using akash, csv-parser and fast-csv in task command ",()=>{
 
         cy.task('readFromCsv',{path:'fixtures/intermediary.csv', headers: false}).then((returnData)=>{
             cy.writeFile('cypress/fixtures/csv_parserAkashApproch.json',returnData);

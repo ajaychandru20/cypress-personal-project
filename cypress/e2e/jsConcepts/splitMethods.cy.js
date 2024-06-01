@@ -3,9 +3,9 @@ describe("Test functions", () => {
     it("test file", () => {
 
         var requestOrder = [
-            "data.fundo_function_get_intermediary_report[0].first_name",
-            "data.fundo_function_get_intermediary_report[0].middle_name",
-            "data.fundo_function_get_intermediary_report[0].last_name"
+            "data.user_details[0].first_name",
+            "data.user_details[0].middle_name",
+            "data.user_details[0].last_name"
         ];
 
         cy.readFile("cypress/fixtures/intermediartJsonResponce.json").then((resData) => {

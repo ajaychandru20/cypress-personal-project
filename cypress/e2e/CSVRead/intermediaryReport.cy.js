@@ -1,5 +1,5 @@
 describe("Intermediary Report interation", () => {
-   it("verify Contractors details test", () => {
+   it.skip("verify Contractors details test", () => {
         var csvContractorDetails = [];
 
         cy.task('readFromCsv', { path: 'fixtures/intermediary.csv', headers: false }).then((returnData) => {

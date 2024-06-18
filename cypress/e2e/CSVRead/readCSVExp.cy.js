@@ -22,7 +22,7 @@ describe("Read the CSV file", () => {
     })
 
     it.skip("using csv-parser and fs approch in task command", () => {
-        cy.task('readCSVFile', { filePath: "cypress/fixtures/intermediary.csv", jsonFilePath: "cypress/fixtures/csv_parserUsingFS.json", headers: ['emp heading', 'name'] })
+        cy.task('readCSVFile', { filePath: "cypress/fixtures/jsonVerifyData.csv", jsonFilePath: "cypress/fixtures/csv_parserUsingFS.json", headers: ['emp heading', 'name'] })
             .then(() => {
                 cy.readFile("cypress/fixtures/csv_parserUsingFS.json").then((testData) => {
                     console.table(testData)
@@ -36,7 +36,7 @@ describe("Read the CSV file", () => {
 
     it.skip("using akash, csv-parser and fast-csv in task command ",()=>{
 
-        cy.task('readFromCsv',{path:'fixtures/intermediary.csv', headers: false}).then((returnData)=>{
+        cy.task('readFromCsv',{path:'cypress/fixtures/jsonVerifyData.csv', headers: false}).then((returnData)=>{
             cy.writeFile('cypress/fixtures/csv_parserAkashApproch.json',returnData);
             cy.log(returnData[0][0])
             console.table(returnData)
@@ -46,7 +46,7 @@ describe("Read the CSV file", () => {
 
 
     it.skip("simple parser", () => {
-        cy.fixture("intermediary.csv").then((data) => {
+        cy.fixture("jsonVerifyData.csv").then((data) => {
             parse(data, { bom: true, delimiter: ',' }, (err, output) => {
                 if (err) {
                     console.error(err);

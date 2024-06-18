@@ -8,7 +8,7 @@ describe("Test functions", () => {
             "data.user_details[0].last_name"
         ];
 
-        cy.readFile("cypress/fixtures/intermediartJsonResponce.json").then((resData) => {
+        cy.readFile("cypress/fixtures/jsonVerifyData.json").then((resData) => {
             var extractedValues = [];
 
             requestOrder.forEach(path => {

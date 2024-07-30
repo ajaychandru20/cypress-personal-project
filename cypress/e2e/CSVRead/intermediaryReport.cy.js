@@ -1,11 +1,11 @@
-describe("Intermediary Report interation", () => {
+describe("Excel Report interation", () => {
    it.skip("verify Contractors details test", () => {
         var csvContractorDetails = [];
 
-        cy.task('readFromCsv', { path: 'fixtures/intermediary.csv', headers: false }).then((returnData) => {
-            cy.writeFile('cypress/fixtures/csv_parserAkashApproch.json', returnData);
+        cy.task('readFromCsv', { path: 'fixtures/excelreport.csv', headers: false }).then((returnData) => {
+            cy.writeFile('cypress/fixtures/csv_parserAkApproch.json', returnData);
 
-            cy.readFile('cypress/fixtures/csv_parserAkashApproch.json').then((resData) => {
+            cy.readFile('cypress/fixtures/csv_parserAkApproch.json').then((resData) => {
                 const rowLength = resData.length
                 const workersHeaderPosition = resData[7];
                 cy.log("Total Row length", rowLength)

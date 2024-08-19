@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "This repository is created for learn the cypress",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "react-scripts start",
     "test": "cypress run",
@@ -11,7 +12,7 @@
   "author": "ajayc",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.10.0",
+    "cypress": "^13.13.3",
     "cypress-real-events": "^1.12.0",
     "neat-csv": "^5.2.0"
   },

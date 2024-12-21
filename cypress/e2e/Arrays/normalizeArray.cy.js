@@ -3,7 +3,7 @@ describe('Verify two arrays are the same', () => {
       const array1 = [
         "Ajay",
         "C",
-        "2022-02-21",
+        "2022-02-23",
         "F",
         "South St",
         "Wincanton",
